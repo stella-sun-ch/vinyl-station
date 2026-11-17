@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Stella Spins</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Fraunces:wght@900&family=Cormorant+Garamond:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Website styling -->
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body>
+    <!-- Interactive 3D vinyl player -->
+    <canvas
+      id="stage"
+      aria-label="A 3D record shelf with a turntable on top. Use the left and right arrow keys to flip through the records, Enter to play one and Space to pause."
+    ></canvas>
+
+    <!-- Loading screen -->
+    <div id="loader" role="status" aria-live="polite">
+      <span id="loader-pct">0%</span>
+    </div>
+
+    <!-- Main logo and subtitle -->
+    <header id="masthead">
+      <h1>stella spins.</h1>
+      <p id="subtitle">a very random selection of very good songs</p>
+      <p id="notice" role="status" hidden></p>
+    </header>
+
+    <!-- Credits -->
+    <p id="credit">
+      <span id="credit-apple" hidden>
+        Previews and artwork courtesy of Apple.
+      </span>
+      Design inspired by Gaspard.
+    </p>
+
+    <!-- Album label -->
+    <p id="label" hidden></p>
+
+    <!-- Current song -->
+    <p id="caption" aria-live="polite">
+      Pick a record to play
+    </p>
+
+    <!-- Main JavaScript -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
